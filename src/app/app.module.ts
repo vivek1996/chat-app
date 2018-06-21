@@ -7,6 +7,12 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { ToastrModule } from 'ngx-toastr';
+import { AppRoutingModule } from './/app-routing.module';
+
+import { UserModule } from './user/user.module';
+import { ChatModule } from './chat/chat.module';
+import { AppService } from './app.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -15,9 +21,13 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     MDBBootstrapModule.forRoot(),
+    FormsModule,
+    AppRoutingModule,
+    UserModule,
+    ChatModule,
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
