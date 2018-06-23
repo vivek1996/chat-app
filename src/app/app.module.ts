@@ -22,9 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ToastrModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    AppRoutingModule,
     UserModule,
     ChatModule,
+    AppRoutingModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [AppService],
