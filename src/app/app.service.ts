@@ -36,7 +36,7 @@ export class AppService {
       params
     );
     return response;
-  };
+  }
 
   // method to SignIn the User
   public signIn = (data): Observable<any> => {
@@ -49,7 +49,7 @@ export class AppService {
       params
     );
     return response;
-  };
+  }
 
   public logout(): Observable<any> {
     const params = new HttpParams().set('authToken', Cookie.get('authToken'));
@@ -59,9 +59,9 @@ export class AppService {
 
   public getUserInfoFromLocalstorage = () => {
     return JSON.parse(localStorage.getItem('userInfo'));
-  };
+  }
 
   public setUserInfoInLocalStorage = data => {
     localStorage.setItem('userInfo', JSON.stringify(data));
-  };
+  }
 }

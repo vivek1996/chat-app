@@ -23,8 +23,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
   public goToSignUp: any = () => {
-    this.router.navigate(['/sign-up']);
-  };
+    this.router.navigate(['/signup']);
+  }
 
   public signinFunction: any = () => {
     if (!this.email) {
@@ -67,5 +67,5 @@ export class LoginComponent implements OnInit {
         }
       );
     } // end condition
-  };
+  }
 }
