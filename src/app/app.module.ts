@@ -18,13 +18,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     CommonModule,
+    FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     MDBBootstrapModule.forRoot(),
-    FormsModule,
     UserModule,
     ChatModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [AppService],
