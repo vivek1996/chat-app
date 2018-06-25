@@ -14,9 +14,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     MDBBootstrapModule.forRoot(),
-    RouterModule.forChild([{ path: 'signup', component: SignupComponent }]),
+    RouterModule.forChild([{ path: 'signup', component: SignupComponent }])
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  declarations: [LoginComponent, SignupComponent],
+  declarations: [LoginComponent, SignupComponent]
 })
 export class UserModule {}
