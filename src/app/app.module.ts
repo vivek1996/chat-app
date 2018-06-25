@@ -13,18 +13,22 @@ import { UserModule } from './user/user.module';
 import { ChatModule } from './chat/chat.module';
 import { AppService } from './app.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     UserModule,
     ChatModule,
     AppRoutingModule,
+    FormsModule,
+    HttpModule,
+    HttpClientModule,
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [AppService],

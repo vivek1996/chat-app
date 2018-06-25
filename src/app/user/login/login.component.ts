@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
 import { AppService } from '../../app.service';
 import { ToastrService } from 'ngx-toastr';
+// import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,7 +16,10 @@ export class LoginComponent implements OnInit {
     private toastr: ToastrService,
     public router: Router,
     public appService: AppService
-  ) {}
+  ) {
+    // this.email = new FormControl('', Validators.email);
+    // this.password = new FormControl('', Validators.required);
+  }
 
   ngOnInit() {}
   public goToSignUp: any = () => {
