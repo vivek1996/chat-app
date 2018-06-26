@@ -7,7 +7,7 @@ import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   public email: any;
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
   public goToSignUp: any = () => {
     this.router.navigate(['/signup']);
-  }
+  };
 
   public signinFunction: any = () => {
     if (!this.email) {
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     } else {
       const data = {
         email: this.email,
-        password: this.password,
+        password: this.password
       };
 
       this.appService.signIn(data).subscribe(
@@ -63,9 +63,9 @@ export class LoginComponent implements OnInit {
           }
         },
         err => {
-          this.toastr.error('some error occured',err);
+          this.toastr.error('some error occured', err);
         }
       );
     } // end condition
-  }
+  };
 }
